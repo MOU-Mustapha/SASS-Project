@@ -1,0 +1,144 @@
+@use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
+
+/* Start Slider */
+.slider {
+  text-align: center;
+  blockquote {
+    font: {
+      size: 20px;
+      style: italic;
+      weight: bold;
+      family: Tahoma, Arial;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $greyColor;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border: 3px solid $greyColor;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        border-color: #333;
+        background-color: #fff;
+      }
+    }
+  }
+}
+/* End Slider */
+/* Start Services */
+.services {
+  .service-box {
+    @media #{$minMedium} {
+      float: $float-left;
+      width: (100% / 3);
+      padding-right: 16px;
+    }
+    .service-title {
+      color: #444;
+      i {
+        font-size: 35px;
+        position: relative;
+        top: 4px;
+        @media #{$maxMobile} {
+          display: block;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .service-desc {
+      color: #777;
+      line-height: 1.5;
+    }
+    .service-link {
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+/* End Services */
+/* Start Our Players */
+.our-players {
+  .player-box {
+    @media #{$minSmall} {
+      float: $float-left;
+      width: (100% / 2);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    @media #{$minMedium} {
+      width: (100% / 3);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$minLarge} {
+      width: (100% / 5);
+      margin-bottom: 0;
+    }
+    @media #{$maxMobile} {
+      margin-bottom: 40px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    .player-title {
+      color: #444;
+      font-weight: normal;
+      font-size: 17px;
+      span {
+        font-weight: bold;
+      }
+    }
+    .player-desc {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.5;
+    }
+    .player-link {
+      color: $redColor;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+/* End Our Players */
+/* Start Lorem */
+.lorem {
+  .lorem-box {
+    @media #{$minSmall} {
+      float: $float-left;
+      width: (96% / 3);
+    }
+    @media #{$maxMobile} {
+      margin-bottom: 20px;
+    }
+    margin: ((4% / 3) / 2);
+    .lorem-img {
+      max-width: 100%;
+    }
+  }
+}
+/* End Lorem */

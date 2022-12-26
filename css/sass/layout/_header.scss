@@ -1,0 +1,88 @@
+@use "../helpers/variables" as *;
+
+.header {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid $greyColor;
+  .logo {
+    width: 30%;
+    position: relative;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-left;
+    }
+    h1 {
+      margin-bottom: 0;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+    p {
+      color: $greyColor;
+    }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: $redColor;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+      display: none;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+    }
+    @media #{$minSmall} {
+      display: block !important;
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+    @media #{$minMedium} {
+      width: 70%;
+      float: $float-left;
+      margin-top: 1em;
+    }
+    li {
+      width: 20%;
+      float: $float-left;
+      font-size: 18px;
+      text-align: center;
+      @media #{$maxMobile} {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: $text-left;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      a {
+        text-transform: uppercase;
+        display: block;
+        padding: 20px 10px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}

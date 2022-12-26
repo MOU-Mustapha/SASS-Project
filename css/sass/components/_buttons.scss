@@ -1,0 +1,45 @@
+@use "../helpers/variables" as *;
+
+.main-button {
+  background-color: rgba($color: $redColor, $alpha: 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  min-width: 120px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    background-color: $redColor;
+  }
+}
+
+.the-toggler {
+  background-color: $redColor;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  display: none;
+  @media #{$maxMobile} {
+    display: block;
+  }
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

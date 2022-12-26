@@ -1,0 +1,75 @@
+.header .logo .the-toggler {
+  right: auto;
+  left: 15px;
+}
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+.header .navbar li {
+  float: right;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
+
+/* Start Services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+}
+
+/* End Services */
+/* Start Our Players */
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: right;
+  }
+}
+
+/* End Our Players */
+/* Start Lorem */
+@media (min-width: 768px) {
+  .lorem .lorem-box {
+    float: right;
+  }
+}
+
+/* End Lorem */
+.footer .gallery,
+.footer .info,
+.footer .contact {
+  float: right;
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .copyright .text,
+.footer .copyright .author {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .copyright .author {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=homepage-rtl.css.map */
